@@ -27,8 +27,9 @@ Navigate to the repository folder and on the command line terminal:
 
   ## Visuals
   Here is a video and link demonstrating get, post, delete for User and Thought routes. 
+  https://drive.google.com/file/d/15b5g4Y-4jMM7oGvqH9FiCjkCHGQK_UFB/view 
 
-  <iframe src="https://drive.google.com/file/d/15b5g4Y-4jMM7oGvqH9FiCjkCHGQK_UFB/preview" width="640" height="480"></iframe>
+  ![Watch video](./assets/nosql.gif)
 
   ## License
   This project is covered under the MIT license, Node.JS, MongooseDB, Mongoose, Express, and Insomnia. 
@@ -37,5 +38,5 @@ Navigate to the repository folder and on the command line terminal:
   If you would like to contribute to this project, please fork the project and submit a pull request.
 
   ## Questions
-  For any additional questions, you can contact the author: 
+  For any additional questions, you can contact the author: mayperalta@gmail.com. 
 
