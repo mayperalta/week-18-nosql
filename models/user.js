@@ -1,31 +1,32 @@
-const { User, model } = require('mongoose');
+const { Schema, model } = require('mongoose');
+const { MongoClient, ObjectId } = require ('mongodb');
 
-const userSchema = new User(
+const userSchema = new Schema(
     {
         username: {
             type: String,
             required: true,
             unique: true,
-            trim: true
+            trim: true,
         },
         email: {
             type: String,
             required: true,
             unique: true,
-            match: [/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/, "Enter a valid email address"]
+            match: [/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/, "Enter a valid email address"],
         },
         thoughts: [
             {
                 type: Schema.Types.ObjectId,
                 ref: 'thought',
-            }
+            },
         ],
         friends: [
             {
                 type: Schema.Types.ObjectId,
                 ref: 'user',
-            }
-        ]
+            },
+        ],
     },
     {
         toJSON: {
